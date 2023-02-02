@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Guess the number</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h2>Guess A Number</h2>
+    </header>
+    <h3 id="start">Start A New Game</h3>
+    <!-- game interface -->
+    <main id="gameP" class="containerb gp">
+      <h3>Select A Number</h3>
+      <input type="number" name="number" id="input" />
+      <div class="btn">
+        <button id="reset">RESET</button>
+        <button id="submit">CONFIRM</button>
+      </div>
+    </main>
+    <!-- Result page -->
+    <section id="selections" class="containerb rp">
+      <div class="result" id="wrong">
+        <h2 id="resultmsg"></h2>
+      </div>
+      <div class="row">
+        <ul class="list" id="trialOutput"></ul>
+      </div>
+    </section>
+    <!-- Game over page -->
+    <section id="gameOverp" class="containerb go">
+      <img src="./images.jpeg" alt="gameOver" />
+      <h3>Game Over</h3>
+    </section>
+    <!-- footer -->
+    <footer>
+      <button class="hide sbtn" id="sbtn">Play Again</button>
+    </footer>
+  </body>
+</html>
